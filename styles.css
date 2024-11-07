@@ -56,10 +56,10 @@ body {
 .options {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
-  padding: 5px 20px;
-  margin: 10 auto;
+  padding: 5px;
+  margin: 10px auto;
 }
 
 .search {
@@ -81,16 +81,15 @@ body {
   display: flex;
   position: relative;
   width: 60px;
-  height: 50%;
+  height: 60%;
   margin: 10px 0px;
   color: #eeeeee;
   background-color: #222831;
   border-radius: 5px;
-  /* padding: 10px 20px; */
 }
 
 .menu li {
-  margin: 10px 15px;
+  margin: auto 15px;
 }
 
 .menu a {
@@ -151,12 +150,12 @@ main p {
 .location {
   margin-bottom: 40px;
   padding: 10px;
-  text-align: center; /* Center-align content */
+  text-align: center;
 }
 
 .location img {
-  display: block; /* Ensures image is treated as a block element */
-  margin: 30px auto 0; /* Centers image horizontally */
+  display: block;
+  margin: 30px auto 0;
   width: 60%;
   height: auto;
 }
@@ -219,7 +218,7 @@ main p {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Adjusts space between the two divs */
+  gap: 20px;
 }
 
 .contact-form div {
@@ -228,12 +227,10 @@ main p {
 }
 
 .contact-form div:first-child {
-  /* For the first div, standard flex layout for inline inputs */
   align-items: center;
 }
 
 .contact-form div:last-child {
-  /* For the second div, align items to the bottom */
   align-items: flex-end;
 }
 
@@ -250,7 +247,10 @@ main p {
   background-color: #eeeeee;
   color: #222831;
   justify-content: center;
-  text-align: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .sidebar h2,
@@ -288,6 +288,10 @@ h4 {
 /* Footer */
 .footer {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   bottom: 0;
   right: 0;
   width: 20%;
@@ -297,11 +301,6 @@ h4 {
   color: #eeeeee;
   text-align: center;
   transition: width 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
   padding: 20px;
 }
 
