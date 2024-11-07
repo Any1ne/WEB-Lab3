@@ -1,169 +1,346 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #00ADB5;
+  font-family: Arial, sans-serif;
+  background-color: #00adb5;
 }
 
-/* Заголовок */
+/* Header */
 .header {
-    background-color: #222831;
-    color: #EEEEEE;
-    display:flex;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 1000;
+  background-color: #222831;
+  color: #eeeeee;
+  display: flex;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
 }
 
-.logo{
-    display: flex;
-    justify-content: left; 
-    position: relative;
-    width: 80%;
-    padding: 10px 20px;
+.logo {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  width: 80%;
+  padding: 10px 20px;
 }
 
-.ticket{
-    color: #EEEEEE;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 20%;
-    padding: 10px 20px;
-    flex: 1; 
+.ticket {
+  color: #eeeeee;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 20%;
+  padding: 10px 20px;
+  flex: 1;
 }
 
-/* Меню */
+/* Menu */
 .menu {
-    background-color: #393E46;
-    color: #EEEEEE;
-    position: fixed;
-    margin-top: 70px;
-    height: 50px;
-    width: 100%;
-    z-index: 999;
-    display: flex;
+  background-color: #393e46;
+  color: #eeeeee;
+  display: flex;
+  position: fixed;
+  margin-top: 70px;
+  height: 50px;
+  width: 100%;
+  z-index: 999;
 }
 
 .options {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between; 
-    width: 80%;
-    padding: 5px 20px;
-    margin: 10 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 5px 20px;
+  margin: 10 auto;
 }
 
 .search {
-    display: flex;
-    position: relative;
-    flex: 1; 
-    width: 20%;
-    padding: 5px 20px;
-    justify-content: center;
+  display: flex;
+  position: relative;
+  flex: 1;
+  width: 20%;
+  padding: 5px 20px;
+  justify-content: center;
 }
 
-.search h3{
-    display: flex;
-    position: relative;
-    margin: 10px 15px; 
+.search h3 {
+  display: flex;
+  position: relative;
+  margin: 10px 15px;
 }
 
 .search input {
-    display: flex;
-    position: relative;
-    width: 60px;
-    height: 50%;
-    margin: 10px 0px; 
-    color:#EEEEEE;
-    background-color: #222831;
-    border-radius: 5px;
-    /* padding: 10px 20px; */ 
+  display: flex;
+  position: relative;
+  width: 60px;
+  height: 50%;
+  margin: 10px 0px;
+  color: #eeeeee;
+  background-color: #222831;
+  border-radius: 5px;
+  /* padding: 10px 20px; */
 }
 
 .menu li {
-    margin: 10px 15px;
+  margin: 10px 15px;
 }
 
 .menu a {
-    color: #EEEEEE;
-    text-decoration: none;
+  color: #eeeeee;
+  text-decoration: none;
 }
 
-/* Головний вміст */
+/* Main */
 .main-content {
-    background-color: #00ADB5;
-    margin-top: 120px; 
-    width: 80%;
-    float: left;
-    padding: 20px;
-    overflow-y: auto;
-    transition: width 0.3s;
+  background-color: #00adb5;
+  color: #eeeeee;
+  margin-top: 120px;
+  width: 80%;
+  float: left;
+  padding: 30px;
+  overflow-y: auto;
+  transition: width 0.3s;
+  flex-wrap: wrap;
+  line-height: 1.8;
 }
 
-/* Додаткова секція */
+/* General paragraph styling */
+main p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.main-content img {
+  width: 250px;
+  height: auto;
+}
+
+/* About section styling */
+.about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.about img {
+  margin-right: 30px;
+}
+
+/* News section styling */
+.news {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.news img {
+  margin-left: 30px;
+}
+
+/* Location section styling */
+.location {
+  margin-bottom: 40px;
+  padding: 10px;
+  text-align: center; /* Center-align content */
+}
+
+.location img {
+  display: block; /* Ensures image is treated as a block element */
+  margin: 30px auto 0; /* Centers image horizontally */
+  width: 60%;
+  height: auto;
+}
+
+/* Performers section styling */
+.performers {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: 300px;
+  height: auto;
+}
+
+/* Contact section styling */
+.contact {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.contact div {
+  margin: 10px;
+  padding: 10px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjusts space between the two divs */
+}
+
+.contact-form div {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form div:first-child {
+  /* For the first div, standard flex layout for inline inputs */
+  align-items: center;
+}
+
+.contact-form div:last-child {
+  /* For the second div, align items to the bottom */
+  align-items: flex-end;
+}
+
+/* Aside */
 .sidebar {
-    position: fixed;
-    margin-top: 120px;
-    right: 0;
-    width: 20%;
-    padding: 10px 0;
-    height: calc(100vh - 115px);
-    overflow-y: auto;
-    transition: width 0.3s;
-    background-color: #EEEEEE;
-    justify-content: center;
-    text-align: space-between;
+  position: fixed;
+  margin-top: 120px;
+  right: 0;
+  width: 20%;
+  padding: 20px;
+  height: calc(100vh - 320px);
+  overflow-y: auto;
+  transition: width 0.3s;
+  background-color: #eeeeee;
+  color: #222831;
+  justify-content: center;
+  text-align: space-between;
 }
 
-.sidebar h2, h4{
-    margin: 10px 10px;
-    text-align: center;
+.sidebar h2,
+h4 {
+  margin: 10px 10px;
+  text-align: center;
 }
 
-.sidebar ul{
-    list-style-type: none;
-    padding: 5px 10px;
-    margin: 10px 0;
+.sidebar ul {
+  list-style-type: none;
+  padding: 5px 10px;
+  margin: 10px 0;
 }
 
-.sidebar li{
-    margin: 5px 0;
+.sidebar li {
+  margin: 5px 0;
 }
 
-/* Нижній колонтитул */
+/* Sidebar specific styling */
+.sidebar h2,
+.sidebar h4,
+.sidebar ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Ensure each <ul> in the sidebar takes up remaining space */
+.sidebar ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 20%;
-    padding: 20px 10px;
-    background-color: #222831;
-    color: #EEEEEE;
-    text-align: center;
-    transition: width 0.3s;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 200px;
+  padding: 20px 10px;
+  background-color: #222831;
+  color: #eeeeee;
+  text-align: center;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between; 
-    padding: 10px 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
 }
 
 .footer a {
-    color: #EEEEEE;
-    text-decoration: none;
+  color: #eeeeee;
+  text-decoration: none;
 }
 
-.footer p{
-    text-align: left;
+.footer p {
+  text-align: left;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #0b5b74;
 }

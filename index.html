@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Макет сайту</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AnyFest</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="box header">
+        <img src= "./image/logo.png">
         <h1 class="logo">AnyFest</h1>
         <a class="ticket" href="#"><h2>Buy ticket</h2></a>
     </header>
 
-    <nav class="menu">
+    <nav class="box menu">
         <ul class="options">
             <li><a href="#"><h3>Menu<h3></a></li>
             <li><a href="#">About festival</a></li>
@@ -20,49 +21,69 @@
             <li><a href="#">Location</a></li>
             <li><a href="#">Performers</a></li>
             <li><a href="#">Contact us</a></li>
-            
         </ul>
         <section class="search"> <h3>Search</h3> <input type="search" name="q"/> </section>
     </nav>
 
-    <main class="main-content">
-        <h2>Основний вміст</h2>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        <p>Це великий текст для тестування гортання. Додайте більше вмісту за потреби.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique. Vestibulum non erat eu felis volutpat suscipit...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia turpis non nisi interdum, nec cursus orci tristique...</p>
-        <p>... (додайте більше абзаців для перевірки)</p>
-        
+    <main class="box main-content">
+        <!-- About the Festival -->
+        <section class="about">
+            <img src="./image/1.jpeg" alt="Festival photo">
+            <div>
+                <h2>About the Festival</h2>
+                <p>AnyFest is a two-day music festival bringing together fans of indie, rock, and electronic music. Held in the heart of the city, the festival celebrates emerging talent and well-known artists, offering a unique experience under the open sky. Join us for unforgettable performances, delicious food trucks, interactive art installations, and an atmosphere full of positive vibes. It's the perfect summer event for music lovers looking to discover new artists and enjoy the energy of a live crowd.</p>
+            </div>
+        </section>
+    
+        <!-- News -->
+        <section class="news">
+            <div>
+                <h2>News</h2>
+                <p>Stay updated with the latest news about AnyFest! From artist announcements to special surprises, this section will keep you informed on all the festival's updates. Follow along for details on ticket sales, lineup additions, behind-the-scenes insights, and tips on making the most of your festival experience. Don’t miss out on exclusive sneak peeks and exciting reveals leading up to the big event!</p>
+            </div>
+            <img src="./image/2.jpeg" alt="News photo">
+        </section>
+    
+        <!-- Location -->
+        <section class="location">
+            <div>
+                <h2>Location</h2>
+                <p>AnyFest will take place at AnyLocation, a venue known for its spacious and vibrant atmosphere, surrounded by nature and close to the city’s best landmarks. The location is easily accessible by public transport, with plenty of parking areas nearby for those driving in. Whether you’re camping on-site or visiting for a single day, AnyLocation offers the ideal setting for a festival adventure. Explore the venue map to find different stages, food courts, chill-out zones, and merchandise stalls to enhance your festival experience.</p>
+            </div>
+            <img class="location-img" src="./image/3.jpeg" alt="Location map">
+        </section>
+    
+        <!-- Performers -->
+        <section class="performers">
+            <h2>Performers</h2>
+            <p>Meet the amazing line-up of AnyArtists ready to rock the stage at AnyFest! From international headliners to local talents, our festival features an exciting mix of genres that guarantees something for everyone. With artists covering indie, rock, pop, and electronic sounds, AnyFest promises a diverse musical journey. Browse through their profiles to learn more about each performer, their latest hits, and what to expect during their sets. Get ready to discover your new favorite artist!</p>
+            <div class="gallery">
+                <img src="./image/artist0.jpeg" alt="Artist 0 photo">
+                <img src="./image/artist1.jpeg" alt="Artist 1 photo">
+                <img src="./image/artist2.jpeg" alt="Artist 2 photo">
+                <img src="./image/artist3.jpeg" alt="Artist 3 photo">
+            </div>
+        </section>
+    
+        <!-- Contact Us -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or simply want to say hello, don’t hesitate to reach out! Our team is here to help make your AnyFest experience as smooth as possible. Whether it’s questions about tickets, event schedules, or general information, we're happy to assist. Fill out the form below, and we’ll get back to you as soon as we can. We look forward to connecting with you!</p>
+            <form class="contact-form">
+                <div>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
     </main>
+    
 
-    <aside class="sidebar">
+    <aside class="box sidebar">
         <h2>Program</h2>
         <h4> First day (Saturday)</h4>
         <ul>
@@ -83,18 +104,14 @@
         </ul>
     </aside>
 
-    <footer class="footer">
+    <footer class="box footer">
         <h2>Follow us</h2>
         <ul> 
             <li><a href="">Instagram </a></li>
             <li><a href="">Facebook</a></li>
-            <li><a href="">X</a></li>
+            <li><a href="">X (Twitter)</a></li>
         </ul>
-        <p>Contact us Gmail</p>
+        <p>Email us at: <a href="mailto:support@anyfest.com">support@anyfest.com</a></p>
     </footer>
-
-    <button id="toggleBtn" class="toggle-btn">&lt;</button>
-
-    <script src="script.js"></script>
 </body>
 </html>
